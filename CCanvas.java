@@ -3,17 +3,20 @@ import java.util.List;
 import java.util.Random;
 
 /**
+ * @author Kenny Chiang
+ * @version 1.0
  * Class representing a canvas, which has a list of 10 random shapes.
  */
 class CCanvas {
-    private List<CShape> shapes; //Initialize a list of shapes
+    private List<CShape> shapes; /**Initialize a list of shapes*/
 
+    /** Method to make the canvas */
     public CCanvas() {
-        this.shapes = new ArrayList<>(); //Assign an array list to the shapes
-        generateRandomShapes(); //generate random shapes
+        this.shapes = new ArrayList<>();
+        generateRandomShapes();
     }
 
-    //random shape generator method
+    /** Method to generate random shapes */
     private void generateRandomShapes() {
         Random random = new Random();
 
@@ -45,7 +48,7 @@ class CCanvas {
         }
     }
 
-    //method to print the shapes
+    /**method to print the shapes*/
     public void displayShapes() {
         System.out.println("Canvas has the following random shapes:\n");
 
